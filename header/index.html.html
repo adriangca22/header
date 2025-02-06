@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiqueta Ambiental Homologada</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            height: 100vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            overflow: hidden;
+            background: url('./admin-ajax.png') no-repeat center center/cover;
+            transition: transform 0.5s ease-in-out;
+        }
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            transition: background-color 0.5s ease-in-out;
+            z-index: 0;
+        }
+        .header:hover {
+            transform: scale(0.95); /* Reduce el tamaño de la imagen */
+        }
+        .header:hover::before {
+            background-color: rgba(0, 0, 0, 0.7); /* Oscurece el fondo */
+        }
+        .header-content {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.5rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+        .cta-button {
+            background-color: #502626;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1rem;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #acacac;
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            p { font-size: 1rem; }
+            .cta-button { padding: 10px 20px; font-size: 0.9rem; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1>Etiqueta Ambiental Homologada</h1>
+            <p>Distintivo Homologado por la DGT, web que más etiquetas ambientales ha vendido en toda España.</p>
+            <a href="https://etiquetadgt.burocraciacero.com/producto/distintivo-ambiental-b-c-eco-o-cero-para-tu-coche-o-moto/" class="cta-button">Solicitar Etiqueta</a>
+        </div>
+    </header>
+</body>
+</html>
